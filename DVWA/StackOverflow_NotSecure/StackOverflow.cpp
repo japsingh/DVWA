@@ -18,7 +18,7 @@ void ProcessInput(char *str, int size)
 int main(int argc, char *argv[])
 {
 	if (argc < 1) {
-		std::cout << "Usage: Pass a string via commandline" << std::endl;
+		std::cout << "Usage: Pass a file path via commandline" << std::endl;
 		return -1;
 	}
 
