@@ -3,6 +3,7 @@ Damned Vulnerable Windows Application
 
 In line with the other "Damned vulnerable" series of binaries, this is a demonstration of software vulnerabilities in a Windows desktop application, which lead to exploits. Currently, the following vulnerabilities are demonstrated:
 1. Stack buffer overrun
+2. ROP
 
 Feel free to use the code in trainings and other legal purposes.
 
