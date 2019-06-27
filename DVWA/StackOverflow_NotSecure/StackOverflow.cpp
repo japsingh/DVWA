@@ -11,7 +11,7 @@ void ProcessInput(char *str, int size)
 {
 	char inputCopy[MAX_PATH]{};
 	memcpy(inputCopy, str, size);
-	printf(str);
+	printf(inputCopy);
 }
 #pragma optimize( "", on )
 
