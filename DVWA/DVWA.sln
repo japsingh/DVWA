@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ROP", "ROP\ROP.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntegerOverflow", "IntegerOverflow\IntegerOverflow.vcxproj", "{E1062D5D-8D5F-4223-9765-A9966551F77F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VptrOverwrite", "VptrOverwrite\VptrOverwrite.vcxproj", "{4E491894-BFD7-4E05-9DA8-25C475318995}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,12 @@ Global
 		{E1062D5D-8D5F-4223-9765-A9966551F77F}.Release|x64.ActiveCfg = Release|Win32
 		{E1062D5D-8D5F-4223-9765-A9966551F77F}.Release|x86.ActiveCfg = Release|Win32
 		{E1062D5D-8D5F-4223-9765-A9966551F77F}.Release|x86.Build.0 = Release|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Debug|x64.ActiveCfg = Debug|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Debug|x86.Build.0 = Debug|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Release|x64.ActiveCfg = Release|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Release|x86.ActiveCfg = Release|Win32
+		{4E491894-BFD7-4E05-9DA8-25C475318995}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

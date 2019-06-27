@@ -6,6 +6,8 @@
 #include <fstream>
 #include <windows.h>
 
+#define MAX_HEADER 80
+
 #pragma optimize( "", off )
 void ProcessInput(char *str, int size, int headersize)
 {
@@ -17,7 +19,7 @@ void ProcessInput(char *str, int size, int headersize)
 	int offset = 0;
 
 	// insert header
-	if (headersize > 0) {
+	if (headersize > 0 && headersize < MAX_HEADER) {
 		for (int i = 0; i < headersize - 1; ++i) {
 			inputCopy[offset++] = '*';
 		}
@@ -28,7 +30,7 @@ void ProcessInput(char *str, int size, int headersize)
 	memcpy(inputCopy + offset, str, size);
 
 	// insert footer
-	if (headersize > 0) {
+	if (headersize > 0 && headersize < MAX_HEADER) {
 		offset += size;
 		inputCopy[offset++] = '\n';
 		for (int i = 0; i < headersize - 1; ++i) {
@@ -43,7 +45,7 @@ void ProcessInput(char *str, int size, int headersize)
 int main(int argc, char *argv[])
 {
 	if (argc < 2) {
-		std::cout << "Usage: Pass a file path and chunk size via commandline" << std::endl;
+		std::cout << "Usage: Pass a file path and header size via commandline" << std::endl;
 		return -1;
 	}
 
