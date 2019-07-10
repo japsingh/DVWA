@@ -11,3 +11,11 @@ Feel free to use the code in trainings and other legal purposes.
 
 Shellcode used:
 https://github.com/peterferrie/win-exec-calc-shellcode
+
+Usage:
+1. Clone the repo locally
+2. Launch DVWA\DVWA.sln (Visual studio 2017)
+3. Build the solution in Release mode. This will generate all the executables in DVWA\Release folder.
+4. Copy *.bin from DVWA\Exploit folder to DVWA\Release folder
+5. From commandline, navigate to DVWA\Release folder
+6. Execute Exploit.exe
